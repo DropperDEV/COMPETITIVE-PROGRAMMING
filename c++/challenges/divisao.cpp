@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
+    cout.precision(2);
     double long a, b;
     cin >> a >> b;
-    cout << a / b << endl;
+    cout << fixed << a / b << endl;
 }
