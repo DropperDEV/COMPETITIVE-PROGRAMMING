@@ -1,18 +1,3 @@
-# Preparação para a Olimpíada Brasileira de Informática (OBI) - Soluções em C++
-
-[![GitHub stars](https://img.shields.io/github/stars/DropperDEV/COMPETITIVE-PROGRAMMING.svg?style=flat&logo=github&color=yellow)](https://github.com/DropperDEV/COMPETITIVE-PROGRAMMING/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/DropperDEV/COMPETITIVE-PROGRAMMING.svg?style=flat&logo=github&color=green)](https://github.com/DropperDEV/COMPETITIVE-PROGRAMMING/network)
-[![License](https://img.shields.io/github/license/DropperDEV/COMPETITIVE-PROGRAMMING.svg?style=flat&color=blue)](https://github.com/DropperDEV/COMPETITIVE-PROGRAMMING/blob/main/LICENSE)
-
-Este repositório contém minhas soluções para diversos problemas de programação competitiva relacionados à preparação para a Olimpíada Brasileira de Informática (OBI). Todas as soluções são implementadas em C++.
-
-## Estrutura de Diretórios
-
-O repositório está organizado em três principais categorias: `challenges`, `initial`, e `insights`. Cada categoria possui subdiretórios para os diferentes problemas da OBI, com soluções implementadas em C++. Os arquivos de saída compilados estão armazenados no diretório `output`.
-
-Claro, vou atualizar o README.md com base na estrutura do seu repositório:
-
-markdown
 
 # Preparação para a Olimpíada Brasileira de Informática (OBI) - Soluções em C++
 
