@@ -9,6 +9,7 @@ using namespace std;
 // # ALGUMAS FUNÇÕES IMPORTANTES #
 // pwr(x,y) : x ^ y
 // sqrt(x) : raiz de x // x ^ 1/2
+
 int main(){
     double a,b;
     int c,d;

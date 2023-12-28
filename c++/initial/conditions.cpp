@@ -10,5 +10,8 @@ int main(){
     if(a%2 != 0){
         cout << "A é impar" << endl;
     }
+    else{
+        cout << "A não é impar nem par"
+    }
     return 0;
 }
