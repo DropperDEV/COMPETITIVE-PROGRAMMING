@@ -7,7 +7,7 @@ int main(){
     int tabuleiro[n][n];
 
     for(int i =0; i < n; i++){
-        int inicio = 0;
+        int inicio = 1;
         if (i%2 == 0){
             inicio = 0;
         }
