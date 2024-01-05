@@ -1,4 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
-    "C_Cpp.default.compilerPath": "c:\\Users\\james\\OneDrive\\Documentos\\Programação-OBI\\c++\\initial\\hello.cpp"
+    "C_Cpp.default.compilerPath": "c:\\Users\\james\\OneDrive\\Documentos\\Programação-OBI\\c++\\initial\\hello.cpp",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }

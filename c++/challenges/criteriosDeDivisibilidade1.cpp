@@ -2,49 +2,35 @@
 
 using namespace std;
 
+int charToInt(char s){
+    return s - '0';
+}
+
 int main(){
-    long long n;
-    cin >> n;
-    bool div2 = false;
-    bool div3 = false;
-    bool div5 = false;
+    string s;
+    cin >> s;
 
-    if ( n % 2 == 0)
-    {
-        div2 = true;
-    }
-      if ( n % 3 == 0)
-    {
-        div3 = true;
-    }  if ( n % 5 == 0)
-    {
-        div5 = true;
-    }
+
+    int ultimoN = s.size() - 1;
+    if(charToInt(s[ultimoN])%2 == 0) cout << 'S' << '\n';
+    else cout << 'N' << '\n';
+
     
-    if(div2){
-    cout << 'S' << '\n';
+  
 
-    }
-    if(!div2){
-    cout << 'N' << '\n';
+    int soma = 0;
 
-    }
-    if(div3){
-    cout << 'S' << '\n';
-
-    }
-    if(!div3){
-    cout << 'N' << '\n';
-
-    }
-    if(div5){
-    cout << 'S' << '\n';
-
-    }
-    if(!div5){
-    cout << 'N' << '\n';
-
+    for (int i = 0; i <= ultimoN; i++)
+    {
+        soma += charToInt(s[i]);
     }
 
+    if(soma%3 == 0) cout << 'S' << '\n';
+    else cout << 'N' << '\n';
+
+
+    if(charToInt(s[ultimoN])%5 == 0) cout << 'S' << '\n';
+    else cout << 'N' << '\n';
+    
     return 0;
 }
