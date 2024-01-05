@@ -20,13 +20,22 @@ int main(){
     cout.precision(4);
     cout.setf(ios::fixed);
 
-    int n, i = 0;
+    int n;
+    int i = 0;
     cin >> n;
-1
+    double vetor[n];
+
     while (i < n)
     {
-        /* code */
+        cin >> vetor[i];
+        i++;
     }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << sqrt(vetor[i]) << '\n';
+    }
+    
     
 
     return 0;
