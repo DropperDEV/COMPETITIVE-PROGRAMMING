@@ -9,6 +9,9 @@
 
     nome_vetor.pop_back(); remove o ultimo valor a direita;
 
+    nome_vetor.begin(), começo do vetor
+    nome_vetor.end(), fim do vetor
+    
     nome_vetor.size(); mostra o tamanho do vetor contando com o 0, exemplo: vetor de 3 casas [0,1,2];
 
     nome_vetor.resize(*TAMANHO*); colocar um tamanho estático do vetor,
@@ -32,4 +35,4 @@
     for( i : valores) quando a condição é desta forma ele passa o valores de valores para o i a cada iteração, exemplo:
 
     valores = [10,5,8]
-    o i via começar com 10, depois passar pra 5 e por fim pra 8.
+    o i vai começar com 10, depois passar pra 5 e por fim pra 8.
