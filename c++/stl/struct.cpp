@@ -8,6 +8,10 @@ struct pessoa{
     double altura;
 };
 
+bool ordernar_altura(struct pessoa a, struct pessoa b){
+    return a.idade > b.idade;
+}
+
 int main(){
     struct pessoa funcionario;
     funcionario.idade = 40;
