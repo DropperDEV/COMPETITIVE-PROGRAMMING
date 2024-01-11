@@ -22,74 +22,25 @@ using namespace std;
 //     1≤N≤501≤N≤50
 
 int main(){
-    int n;
+    int n,mina;
     cin >> n;
-    vector<int> entrada(n);
     vector<int> tabuleiro;
 
     for (int i = 0; i < n; i++)
     {
-        cin >> entrada[i];
+        int num;
+        cin >> num;
+        tabuleiro.push_back(num);
     }
-
-    for (int i = 0; i <= n; i++)
-    {
-        if(entrada[i] == 0){
-            if(i==0){
-                if(entrada[i+1] == 1){
-                    tabuleiro.push_back(1);
-                }
-                if(entrada[i+1] == 0){
-                    tabuleiro.push_back(0);
-                }
-            }
-            if(i>0){
-                if((entrada[i-1] == 1 and entrada[i+1] == 0) or (entrada[i-1] == 0 and entrada[i+1] == 1)){
-                    tabuleiro.push_back(1);
-                }
-                if(entrada[i-1] == 1 and entrada[i+1] == 1){
-                    tabuleiro.push_back(2);
-                }
-            }
-            if(i == n ){
-                if(entrada[i-1] == 1){
-                    tabuleiro.push_back(1);
-                }
-            }
-        }
-        if(entrada[i] == 1){
-            if(i==0){
-                if(entrada[i+1] == 1){
-                    tabuleiro.push_back(2);
-                }
-            }
-            if(i>0){
-                if((entrada[i-1] == 1 and entrada[i+1] == 0) or (entrada[i-1] == 0 and entrada[i+1] == 1)){
-                    tabuleiro.push_back(2);
-                }
-                if(entrada[i-1] == 1 and entrada[i+1] == 1){
-                    tabuleiro.push_back(3);
-                }
-            }
-            if(i == n ){
-                if(entrada[i-1] == 1){
-                    tabuleiro.push_back(2);
-                }
-            }
-        }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << entrada[i] << ' ';
-    }
-    
-    cout << '\n';
 
     for (int i = 0; i < n; i++)
     {
-        cout << tabuleiro[i] << ' ';
-    }
-    
+        mina = 0;
+        if(tabuleiro[i - 1] == 1) mina++;
+        if(tabuleiro[i] == 1) mina++;
+        if(tabuleiro[i + 1] == 1) mina++;
 
+        cout << mina << '\n';
+    }
     return 0;
 };
