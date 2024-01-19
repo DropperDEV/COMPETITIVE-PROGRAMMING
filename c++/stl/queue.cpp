@@ -11,7 +11,6 @@ int main(){
     int n;
     queue<int> fila;
     cin >> n;
-
     for (int i = 0; i < n; i++)
     {
         int valor;
@@ -21,7 +20,7 @@ int main(){
     fila.pop();
    while(!fila.empty())
     {
-        cout << fila.front() << '\n';
+        cout << fila.front() << '\n'; 
         fila.pop();
     }
     
